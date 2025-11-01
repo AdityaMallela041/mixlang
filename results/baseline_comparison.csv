@@ -1,0 +1,4 @@
+Model,Accuracy (%),Hindi-English,Spanish-English,Nepali-English
+Baseline,80.73,-,-,-
+MixLang+,97.15,96.41,98.27,96.77
+Improvement,+16.42,-,-,-
