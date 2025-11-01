@@ -158,37 +158,58 @@ text
 
 ---
 
-## 📁 **Project Structure**
-
+```
 mixlang/
+├── configs/
+│   └── config.yaml              # Configuration settings
+│
 ├── data/
-│ ├── raw/
-│ │ └── LinCE/ # Original LinCE CSV files
-│ └── processed/ # Preprocessed datasets
-│ ├── hineng/
-│ ├── spaeng/
-│ └── nepeng/
-├── models/ # Saved model checkpoints
-│ ├── hineng/
-│ ├── spaeng/
-│ └── nepeng/
+│   ├── raw/                     # Raw datasets (not in repo - see setup)
+│   │   └── LinCE/               # LinCE benchmark data
+│   └── processed/               # Preprocessed data ready for training
+│       ├── hineng/
+│       ├── spaeng/
+│       └── nepeng/
+│
+├── models/                      # Saved model checkpoints (not in repo)
+│   ├── hineng/
+│   ├── spaeng/
+│   └── nepeng/
+│
 ├── scripts/
-│ ├── preprocess.py # Data preprocessing
-│ ├── train.py # Model training
-│ ├── eval.py # Comprehensive evaluation
-│ └── implementation.py # Interactive CLI demo
+│   ├── preprocess_lince.py      # Data preprocessing
+│   ├── train_with_token.py      # Token-level training
+│   ├── train_pos.py             # POS tagging training
+│   ├── eval.py                  # Comprehensive evaluation
+│   ├── eval1.py                 # Alternative evaluation
+│   ├── implementation.py        # Interactive CLI demo
+│   └── inspect_lince_files.py   # Dataset inspection utility
+│
+├── src/
+│   ├── data/
+│   │   ├── dataset_loader.py    # Dataset loading utilities
+│   │   └── preprocessor.py      # Text preprocessing
+│   ├── models/
+│   │   ├── xlm_roberta_model.py # XLM-RoBERTa implementation
+│   │   └── indicbert_model.py   # IndicBERT implementation
+│   ├── evaluation/
+│   │   ├── evaluator.py         # Model evaluation
+│   │   └── metrics.py           # Performance metrics
+│   └── utils/
+│       └── helpers.py           # Utility functions
+│
 ├── results/
-│ ├── classification_reports/ # Performance metrics
-│ ├── confusion_matrices/ # Visualization
-│ └── learning_curves/ # Training plots
-├── docs/
-│ ├── paper.pdf # Research paper
-│ └── presentation.pptx # Project presentation
-├── requirements.txt # Python dependencies
-├── .gitignore
-└── README.md
-
-text
+│   ├── confusion_matrix_*.png   # Confusion matrices
+│   ├── baseline_comparison.png  # Performance comparison
+│   ├── training_curves_*.png    # Learning curves
+│   └── classification_report.csv # Detailed metrics
+│
+├── .gitignore                   # Git exclusions
+├── .gitattributes               # Git LFS configuration
+├── README.md                    # Project documentation
+├── requirements.txt             # Python dependencies
+└── setup.py                     # Package setup
+```
 
 ---
 
@@ -348,14 +369,6 @@ For questions or collaboration:
 
 **Current Version**: 1.0.0  
 **Last Updated**: November 2025
-
----
-
-## 🌟 **Star History**
-
-If you find MixLang useful, please consider starring the repository!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=AdityaMallela041/mixlang&type=Date)](https://star-history.com/#AdityaMallela041/mixlang&Date)
 
 ---
 
