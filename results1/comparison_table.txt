@@ -1,0 +1,10 @@
+Comparison with Xie et al. (2025)
+======================================================================
+
+                   Model Spanish-English Hindi-English Nepali-English       Average
+mBERT (Xie et al., 2025)   Not reported*           N/A            N/A Not reported*
+      XLM-RoBERTa (Ours)          0.9824        0.9678         0.9714        0.9739
+
+* Note: Xie et al. (2025) did not report specific LID accuracy
+  They focused on improvements in POS tagging, NER, and SA tasks.
+  Our work achieves 97.39% average LID accuracy across 3 language pairs.

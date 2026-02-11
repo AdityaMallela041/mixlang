@@ -1,0 +1,144 @@
+======================================================================
+🚀 MixLang+ LIVE CODE-SWITCHING DEMO
+======================================================================
+Token-level Language Identification using XLM-RoBERTa
+Trained on LinCE Benchmark | Average Accuracy: 97.39%
+======================================================================
+
+======================================================================
+🌍 SELECT LANGUAGE PAIR
+======================================================================
+  1. Hindi-English
+  2. Spanish-English
+  3. Nepali-English
+----------------------------------------------------------------------
+Enter choice [1-3]: 1
+
+✓ Selected: Hindi-English
+   Loading model... ✓
+
+💡 Commands:
+   - Type your sentence to analyze (no quotes needed)
+   - Type 'change' to switch language models
+   - Type 'exit' to quit
+
+💡 TIP: Works best with natural code-switched sentences!
+
+----------------------------------------------------------------------
+Enter sentence: Kal I went to market aur shopping ki
+
+======================================================================
+📊 TOKEN-LEVEL ANALYSIS
+======================================================================
+Token                Language               Confidence
+----------------------------------------------------------------------
+Kal                  Hindi                 98.71%  █████████
+I                    English               98.49%  █████████
+went                 English               99.86%  █████████
+to                   English               99.81%  █████████
+market               English               99.89%  █████████
+aur                  Hindi                 98.93%  █████████
+shopping             English               99.84%  █████████
+ki                   Hindi                 99.15%  █████████
+======================================================================
+
+Code-Mixing Status:       YES ✓
+Average Confidence:       99.34%
+Total Tokens:             8
+
+📈 Language Distribution:
+   English             :   5 tokens ( 62.5%)
+   Hindi               :   3 tokens ( 37.5%)
+======================================================================
+
+----------------------------------------------------------------------
+Enter sentence: change
+
+======================================================================
+🌍 SELECT LANGUAGE PAIR
+======================================================================
+  1. Hindi-English
+  2. Spanish-English
+  3. Nepali-English
+----------------------------------------------------------------------
+Enter choice [1-3]: 2
+
+✓ Switched to: Spanish-English
+   Loading model... ✓
+
+----------------------------------------------------------------------
+Enter sentence: Voy a la store porque necesito some groceries
+
+======================================================================
+📊 TOKEN-LEVEL ANALYSIS
+======================================================================
+Token                Language               Confidence
+----------------------------------------------------------------------
+Voy                  Spanish               99.92%  █████████
+a                    Spanish               99.86%  █████████
+la                   Spanish               99.95%  █████████
+store                English               99.56%  █████████
+porque               Spanish               99.96%  █████████
+necesito             Spanish               99.93%  █████████
+some                 English               99.65%  █████████
+groceries            English               99.33%  █████████
+======================================================================
+
+Code-Mixing Status:       YES ✓
+Average Confidence:       99.77%
+Total Tokens:             8
+
+📈 Language Distribution:
+   Spanish             :   5 tokens ( 62.5%)
+   English             :   3 tokens ( 37.5%)
+======================================================================
+
+----------------------------------------------------------------------
+Enter sentence: change
+
+======================================================================
+🌍 SELECT LANGUAGE PAIR
+======================================================================
+  1. Hindi-English
+  2. Spanish-English
+  3. Nepali-English
+----------------------------------------------------------------------
+Enter choice [1-3]: 3
+
+✓ Switched to: Nepali-English
+   Loading model... ✓
+
+----------------------------------------------------------------------
+Enter sentence: Ma aja office late pugne chu because traffic was bad
+
+======================================================================
+📊 TOKEN-LEVEL ANALYSIS
+======================================================================
+Token                Language               Confidence
+----------------------------------------------------------------------
+Ma                   Nepali                99.87%  █████████
+aja                  Nepali                99.87%  █████████
+office               English               99.85%  █████████
+late                 English               99.91%  █████████
+pugne                Nepali                99.75%  █████████
+chu                  Nepali                99.88%  █████████
+because              English               99.93%  █████████
+traffic              English               99.93%  █████████
+was                  English               99.90%  █████████
+bad                  English               99.93%  █████████
+======================================================================
+
+Code-Mixing Status:       YES ✓
+Average Confidence:       99.88%
+Total Tokens:             10
+
+📈 Language Distribution:
+   English             :   6 tokens ( 60.0%)
+   Nepali              :   4 tokens ( 40.0%)
+======================================================================
+
+----------------------------------------------------------------------
+Enter sentence: exit
+
+======================================================================
+👋 Thank you for using MixLang+!
